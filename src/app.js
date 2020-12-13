@@ -68,7 +68,7 @@ app.get('/weather', (req, res) => {
             });
         }
     });
-
+ 
     /*res.send({
         location    : 'Loganlea',
         forecast    : 'It is raining.',
