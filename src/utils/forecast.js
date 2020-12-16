@@ -12,9 +12,9 @@ const forecast = (latitude, longitude, callback) => {
                 error :'Location was not found. Please try another search.'
             });
         } else {
-            var {weather_descriptions, temperature, feelslike} = body.current;
+            var {weather_descriptions, temperature, feelslike, humidity} = body.current;
             callback(undefined, weather_descriptions[0] + '. It is currently '+ temperature + ' degrees out. '+
-            'It feels like ' + feelslike+ ' degrees out.');
+            'It feels like ' + feelslike+ ' degrees out. The humidy is ' + humidity + "%");
         }
     });
 }
